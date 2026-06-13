@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "minecrafts:firefly_deathblood_sword",
+      "custom_item_type": "weapon",
+      "category": "custom1"
+    },
+
+    "components": {
+      "minecraft:max_stack_size":1,
+      "minecraft:max_damage":6,
+      "netease:weapon":{
+        "type":"sword",
+        "level":3,
+        "speed":8,
+        "attack_damage":4,
+        "enchantment":10
+      }
+    }
+  }
+}

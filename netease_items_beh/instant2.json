@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "minecrafts:instanthealth_potions",
+            "register_to_create_menu": true,
+            "category": "custom1"
+        },
+        "components": {
+            "minecraft:hand_equipped": false,
+            "minecraft:stacked_by_data": false,
+            "minecraft:use_duration": 32,
+            "minecraft:foil": false,
+            "minecraft:max_stack_size": 1,
+            "minecraft:food": {
+                "nutrition": 0,
+                "saturation_modifier": "poor",
+                "can_always_eat": true
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+        },
+        "minecraft:cooldown": {
+            "category": "item1",
+            "duration": 6
+        },
+        "description": {
+            "category": "custom1",
+            "identifier": "minecrafts:fire_charge",
+            "register_to_create_menu": true
+        }
+    }
+}
