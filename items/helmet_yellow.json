@@ -1,0 +1,11 @@
+{
+"format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fam:helmet_yellow"
+    },
+    "components": {
+      "minecraft:icon": "fam:helmet_yellow"
+    }
+  }
+}

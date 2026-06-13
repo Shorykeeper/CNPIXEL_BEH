@@ -1,0 +1,11 @@
+{
+"format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fam:boots_red"
+    },
+    "components": {
+      "minecraft:icon": "fam:boots_red"
+    }
+  }
+}
