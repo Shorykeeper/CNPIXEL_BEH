@@ -1,0 +1,21 @@
+//# -*- coding: utf-8 -*-
+//# @Copyright (c) YZBWDLT 2025-2026
+//# @授权User: 柑云宫音. [ ShoreKeep ]
+//# 未经权利人许可，禁止使用/复制/抄袭/搬运本代码
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.bed_bug.summon_silverfish": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "summon_silverfish": "query.is_sheared" }
+                    ]
+                },
+                "summon_silverfish": {
+                    "on_entry": [ "/function entities/bed_bug/summon_sliverfish" ]
+                }
+            }
+        }
+    }
+}
