@@ -1,0 +1,16 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "name": "minecraft:wooden_pickaxe",
+                    "type": "item",
+                    "functions": [
+                        { "function": "specific_enchants", "enchants": [ { "id": "efficiency", "level": 1 } ] }
+                    ]
+                }
+            ]
+        }
+    ]
+}
