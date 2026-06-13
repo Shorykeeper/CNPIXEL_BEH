@@ -1,0 +1,112 @@
+{
+  "format_version": "1.17.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "hb:block",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "iron": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      },
+      "gold": {
+        "minecraft:skin_id": {
+          "value": 2
+        }
+      },
+      "diamond": {
+        "minecraft:skin_id": {
+          "value": 3
+        }
+      },
+      "emerald": {
+        "minecraft:skin_id": {
+          "value": 4
+        }
+      }
+    },
+    "components": {
+      "minecraft:persistent": {},
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:type_family": {
+        "family": [
+          "block"
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:floats_in_liquid": true,
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      }
+    },
+    "events": {
+      "despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      },
+      "diamond": {
+        "add": {
+          "component_groups": [
+            "diamond"
+          ]
+        }
+      },
+      "emerald": {
+        "add": {
+          "component_groups": [
+            "emerald"
+          ]
+        }
+      },
+      "gold": {
+        "add": {
+          "component_groups": [
+            "gold"
+          ]
+        }
+      },
+      "iron": {
+        "add": {
+          "component_groups": [
+            "iron"
+          ]
+        }
+      }
+    }
+  }
+}

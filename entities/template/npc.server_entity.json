@@ -1,0 +1,94 @@
+//# -*- coding: utf-8 -*-
+//# @Copyright (c) YZBWDLT 2025-2026
+//# @授权User: 柑云宫音. [ ShoreKeep ]
+//# 未经权利人许可，禁止使用/复制/抄袭/搬运本代码
+{
+    "format_version": "1.20.10",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "template:npc",
+            "is_experimental": false,
+            "is_spawnable": true,
+            "is_summonable": true,
+            "scripts": { "animate": [ "interact_and_attack_test", "effects" ] },
+            "animations": {
+                "interact_and_attack_test": "controller.animation.npc.interact_and_attack_test",
+                "effects": "animation.npc.effects"
+            }
+        },
+        "components": {
+            "minecraft:physics": { },
+            "minecraft:collision_box": { "height": 1.8, "width": 0.6 },
+            "minecraft:type_family": { "family": [ "npc" ] },
+            "minecraft:knockback_resistance": { "value": 1 },
+            "minecraft:persistent": { },
+            "minecraft:health": { "value": 20, "max": 20 },
+            "minecraft:nameable": { "allow_name_tag_renaming": true, "always_show": true },
+            "minecraft:mark_variant": { "value": 0 },
+//            "minecraft:damage_sensor": { "triggers": [
+//                { "on_damage": { "event": "attacked", "target": "self" } }
+//            ] },
+            "minecraft:type_family": { "family": [ "text_display" ] },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "on_damage": { "filters": [ { "none_of": [ { "test": "has_ability" ,"value": "mayfly" , "subject": "damager" } ] } ] },
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    { "on_interact": { "event": "interacted", "target": "self" }, "interact_text": "action.interact.chat" }
+                ]
+            }
+
+        },
+        "events": {
+            "interacted": { "remove": { "component_groups": [ "default_state" ] }, "add": { "component_groups": [ "interacted" ] } },
+            "attacked": { "remove": { "component_groups": [ "default_state" ] }, "add": { "component_groups": [ "attacked" ] } },
+            "interacted_reset": { "remove": { "component_groups": [ "interacted" ] }, "add": { "component_groups": [ "default_state" ] } },
+            "attacked_reset": { "remove": { "component_groups": [ "attacked" ] }, "add": { "component_groups": [ "default_state" ] } },
+
+            "minecraft:entity_spawned": {
+                "randomize": [
+                    { "add": { "component_groups": [ "should_see_player", "skin_0" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_1" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_2" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_3" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_4" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_5" ] }, "weight": 1 },  
+                    { "add": { "component_groups": [ "should_see_player", "skin_6" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_7" ] }, "weight": 1 }
+                ]
+            },
+            "skin_0": { "add": { "component_groups": [ "should_see_player", "skin_0" ] } },
+            "skin_1": { "add": { "component_groups": [ "should_see_player", "skin_1" ] } },
+            "skin_2": { "add": { "component_groups": [ "should_see_player", "skin_2" ] } },
+            "skin_3": { "add": { "component_groups": [ "should_see_player", "skin_3" ] } },
+            "skin_4": { "add": { "component_groups": [ "should_see_player", "skin_4" ] } },
+            "skin_5": { "add": { "component_groups": [ "should_see_player", "skin_5" ] } },
+            "skin_6": { "add": { "component_groups": [ "should_see_player", "skin_6" ] } },
+            "skin_7": { "add": { "component_groups": [ "should_see_player", "skin_7" ] } },
+            "should_see_player": { "add": { "component_groups": [ "should_see_player" ] } },
+            "should_not_see_player": { "remove": { "component_groups": [ "should_see_player" ] } }
+
+        },
+        "component_groups": {
+            "default_state": { "minecraft:mark_variant": { "value": 0 } },
+            "interacted": { "minecraft:mark_variant": { "value": 1 } },
+            "attacked": { "minecraft:mark_variant": { "value": 2 } },
+
+            "skin_0": { "minecraft:variant": { "value": 0 } },
+            "skin_1": { "minecraft:variant": { "value": 1 } },
+            "skin_2": { "minecraft:variant": { "value": 2 } },
+            "skin_3": { "minecraft:variant": { "value": 3 } },
+            "skin_4": { "minecraft:variant": { "value": 4 } },
+            "skin_5": { "minecraft:variant": { "value": 5 } },
+            "skin_6": { "minecraft:variant": { "value": 6 } },
+            "skin_7": { "minecraft:variant": { "value": 7 } },
+            "should_see_player": { "minecraft:behavior.look_at_player": { "priority": 1 } }
+
+        }
+    }
+}
