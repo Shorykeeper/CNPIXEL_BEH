@@ -1,0 +1,9 @@
+{
+    "category": [
+        {
+            "name": "custom2",
+            "labelText": "CNPIXEL 颜色盔甲",
+            "icon": "textures/items/chestplate_red"
+        }
+    ]
+}
