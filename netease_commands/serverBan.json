@@ -1,0 +1,18 @@
+{
+    "args": [
+        {
+            "name": "玩家",
+            "type": "target"
+        },
+        {
+            "default": 1,
+            "name": "整数型封禁类型",
+            "type": "int"
+        }
+    ],
+    "description": "小岸-管理员封禁玩家",
+    "format_version": "0.0.1",
+    "name": "ban",
+    "permission_level": "admin",
+    "requires_cheats": true
+}

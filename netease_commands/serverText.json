@@ -1,0 +1,13 @@
+{
+    "args": [
+        {
+            "name": "TEXT",
+            "type": "str"
+        }
+    ],
+    "description": "设置计分板末尾黄色介绍",
+    "format_version": "0.0.1",
+    "name": "setbartext",
+    "permission_level": "admin",
+    "requires_cheats": true
+}

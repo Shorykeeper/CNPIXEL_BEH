@@ -1,0 +1,6 @@
+{
+    "description": "通讯系统结束游戏",
+    "format_version": "0.0.1",
+    "name": "end",
+    "permission_level": "game_directors"
+}

@@ -1,0 +1,58 @@
+{
+    "args": [
+        {
+            "name": "目标",
+            "type": "target"
+        },
+        {
+            "default": 0,
+            "name": "击杀",
+            "type": "int"
+        },
+        {
+            "default": 0,
+            "name": "终杀",
+            "type": "int"
+        },
+        {
+            "default": 0,
+            "name": "死亡",
+            "type": "int"
+        },
+        {
+            "default": 0,
+            "name": "破床",
+            "type": "int"
+        },
+        {
+            "default": 0,
+            "name": "胜场",
+            "type": "int"
+        },
+        {
+            "default": 0,
+            "name": "经验",
+            "type": "int"
+        },
+        {
+            "default": 0,
+            "name": "硬币",
+            "type": "int"
+        },
+        {
+            "default": 0,
+            "name": "等级",
+            "type": "int"
+        },
+        {
+            "default": 0,
+            "name": "局数",
+            "type": "int"
+        }
+    ],
+    "description": "用数值覆盖玩家本地战绩数据",
+    "format_version": "0.0.1",
+    "name": "utu",
+    "permission_level": "admin",
+    "requires_cheats": true
+}

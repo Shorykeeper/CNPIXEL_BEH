@@ -1,0 +1,13 @@
+{
+    "args": [
+        {
+            "default": 7,
+            "name": "reach",
+            "type": "int"
+        }
+    ],
+    "description": "设置快速搭路延展的长度",
+    "format_version": "0.0.1",
+    "name": "fastbuild",
+    "permission_level": "game_directors"
+}

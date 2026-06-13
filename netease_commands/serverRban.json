@@ -1,0 +1,13 @@
+{
+    "args": [
+        {
+            "name": "target",
+            "type": "target"
+        }
+    ],
+    "description": "在本服务器解除某玩家封禁",
+    "format_version": "0.0.1",
+    "name": "rban",
+    "permission_level": "game_directors",
+    "requires_cheats": true
+}

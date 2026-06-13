@@ -1,0 +1,35 @@
+{
+    "args": [
+        {
+            "name": "操作",
+            "options": [
+                "reset"
+            ],
+            "type": "enum"
+        }
+    ],
+    "args1": [
+        {
+            "name": "操作",
+            "options": [
+                "upgrade"
+            ],
+            "type": "enum"
+        },
+        {
+            "name": "资源名称",
+            "options": [
+                "iron",
+                "gold",
+                "diamond",
+                "emerald"
+            ],
+            "type": "enum_short"
+        }
+    ],
+    "description": "瓜条子的资源倒计时设置",
+    "format_version": "0.0.1",
+    "name": "countdown",
+    "permission_level": "game_directors",
+    "requires_cheats": true
+}

@@ -1,0 +1,13 @@
+{
+    "args": [
+        {
+            "name": "target",
+            "type": "target"
+        }
+    ],
+    "description": "全服务器穿透封禁某玩家",
+    "format_version": "0.0.1",
+    "name": "forbid",
+    "permission_level": "game_directors",
+    "requires_cheats": true
+}

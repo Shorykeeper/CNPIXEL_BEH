@@ -1,0 +1,13 @@
+{
+    "args": [
+        {
+            "name": "target",
+            "type": "target"
+        }
+    ],
+    "description": "在本服务器解除某玩家禁言",
+    "format_version": "0.0.1",
+    "name": "res",
+    "permission_level": "game_directors",
+    "requires_cheats": true
+}

@@ -1,0 +1,6 @@
+{
+    "description": "进入观战",
+    "format_version": "0.0.1",
+    "name": "view",
+    "permission_level": "game_directors"
+}

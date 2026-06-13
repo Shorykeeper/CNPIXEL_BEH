@@ -1,0 +1,13 @@
+{
+    "args": [
+        {
+            "name": "target",
+            "type": "target"
+        }
+    ],
+    "description": "在本服务器踢出某玩家一次",
+    "format_version": "0.0.1",
+    "name": "kik",
+    "permission_level": "game_directors",
+    "requires_cheats": true
+}

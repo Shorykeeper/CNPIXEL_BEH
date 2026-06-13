@@ -1,0 +1,6 @@
+{
+    "description": "查询战绩",
+    "format_version": "0.0.1",
+    "name": "info",
+    "permission_level": "any"
+}

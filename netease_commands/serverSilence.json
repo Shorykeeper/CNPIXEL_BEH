@@ -1,0 +1,18 @@
+{
+    "args": [
+        {
+            "name": "target",
+            "type": "target"
+        },
+        {
+            "default": 15,
+            "name": "time",
+            "type": "int"
+        }
+    ],
+    "description": "本服务器禁言某玩家",
+    "format_version": "0.0.1",
+    "name": "silence",
+    "permission_level": "game_directors",
+    "requires_cheats": true
+}
