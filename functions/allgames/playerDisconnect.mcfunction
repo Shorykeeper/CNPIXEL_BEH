@@ -1,7 +1,0 @@
-
-
-execute as @s[scores={U2C44V=1..}] at @s run tellraw @a {"rawtext":[{"text":"§b\n§l§eCN§6PIXEL §7>> \n§f尊敬的 "},{"translate":"%%9","with":{"rawtext":[{"selector":"@s[scores={U2C44V=!..0,U2C44V=!2..}]"},{"selector":"@s[scores={U2C44V=!..0,U2C44V=!3..}]"},{"selector":"@s[scores={U2C44V=!..0,U2C44V=!4..}]"},{"selector":"@s[scores={U2C44V=!..0,U2C44V=!5..}]"},{"selector":"@s[scores={U2C44V=!..0,U2C44V=!6..}]"},{"selector":"@s[scores={U2C44V=!..0,U2C44V=!7..}]"},{"selector":"@s[scores={U2C44V=!..0,U2C44V=!8..}]"},{"selector":"@s[scores={U2C44V=!..0,U2C44V=!14..}]"},{"translate":"rights.refix_name_1"},{"translate":"rights.refix_name_2"},{"translate":"rights.refix_name_3"},{"translate":"rights.refix_name_4"},{"translate":"rights.refix_name_5"},{"translate":"rights.refix_name_6"},{"translate":"rights.refix_name_7"},{"translate":"%%7","with":{"rawtext":[{"selector":"@s[scores={U2C44V=!..7,U2C44V=!9..}]"},{"selector":"@s[scores={U2C44V=!..7,U2C44V=!10..}]"},{"selector":"@s[scores={U2C44V=!..7,U2C44V=!11..}]"},{"selector":"@s[scores={U2C44V=!..7,U2C44V=!12..}]"},{"selector":"@s[scores={U2C44V=!..7,U2C44V=!13..}]"},{"selector":"@s[scores={U2C44V=!..7,U2C44V=!14..}]"},{"translate":"rights.refix_name_8"},{"translate":"rights.refix_name_9"},{"translate":"rights.refix_name_10"},{"translate":"rights.refix_name_11"},{"translate":"rights.refix_name_12"},{"translate":"rights.refix_name_13"}]}}]}},{"text":"§7"},{"selector":"@s"},{"text":"§a§l[✔认证] §c离开了本房间!\n§f"}]}
-
-
-
-
